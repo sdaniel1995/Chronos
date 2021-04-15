@@ -1,0 +1,25 @@
+plugins {
+    id 'java-library'
+    id 'war'
+}
+
+apply from: 'https://raw.github.com/gretty-gradle-plugin/gretty/master/pluginScripts/gretty.plugin'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.6.2'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine'
+    implementation 'javax.servlet:javax.servlet-api:4.0.1'
+}
+
+tasks.named('test') {
+    useJUnitPlatform()
+}
+
+gretty {
+    httpPort = 8080
+    contextPath = '/servlet-war-demo'
+}
