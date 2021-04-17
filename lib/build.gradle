@@ -3,6 +3,10 @@ plugins {
     id 'war'
 }
 
+war {
+    archiveName = 'chronos.war'
+}
+
 apply from: 'https://raw.github.com/gretty-gradle-plugin/gretty/master/pluginScripts/gretty.plugin'
 
 repositories {
@@ -13,6 +17,8 @@ dependencies {
     testImplementation 'org.junit.jupiter:junit-jupiter-api:5.6.2'
     testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine'
     implementation 'javax.servlet:javax.servlet-api:4.0.1'
+    implementation 'org.apache.logging.log4j:log4j-api:2.14.1'
+    implementation 'org.apache.logging.log4j:log4j-core:2.14.1'
 }
 
 tasks.named('test') {
@@ -21,5 +27,5 @@ tasks.named('test') {
 
 gretty {
     httpPort = 8080
-    contextPath = '/servlet-war-demo'
+    contextPath = '/Chronos'
 }
