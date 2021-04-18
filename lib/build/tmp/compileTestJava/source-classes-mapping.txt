@@ -1,2 +1,0 @@
-com/github/sdaniel/LibraryTest.java
- com.github.sdaniel.LibraryTest

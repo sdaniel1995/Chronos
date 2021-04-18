@@ -30,9 +30,8 @@ public class UsersDao implements Dao<Users> {
             ResultSet rs = ps.executeQuery();
 
             while (rs.next()) {
-                Users temp = new Users(rs.getInt("eid"), rs.getInt("mid"), rs.getString("first_name"),
-                        rs.getString("last_name"), rs.getString("email"), rs.getString("pass"),
-                        rs.getString("position"));
+                Users temp = new Users(0, rs.getString("first_name"), rs.getString("last_name"), rs.getString("email"),
+                        rs.getString("pass"), rs.getString("position"));
                 users.add(temp);
             }
         } catch (SQLException e) {
@@ -45,14 +44,12 @@ public class UsersDao implements Dao<Users> {
     public void insert(Users user) {
         try {
             PreparedStatement ps = con.prepareStatement(
-                    "INSERT INTO Users (eid, mid, first_name, last_name, email, pass, position) values (?, ?, ?, ?, ?, ?, ?)");
-            ps.setInt(1, user.getEid());
-            ps.setInt(2, user.getMid());
-            ps.setString(3, user.getFirstName());
-            ps.setString(4, user.getLastName());
-            ps.setString(5, user.getEmail());
-            ps.setString(6, user.getPassword());
-            ps.setString(7, user.getPosition());
+                    "INSERT INTO Users (first_name, last_name, email, pass, position) values (?, ?, ?, ?, ?)");
+            ps.setString(1, user.getFirstName());
+            ps.setString(2, user.getLastName());
+            ps.setString(3, user.getEmail());
+            ps.setString(4, user.getPassword());
+            ps.setString(5, user.getPosition());
             ps.executeUpdate();
         } catch (SQLException e) {
             // TODO Auto-generated catch block

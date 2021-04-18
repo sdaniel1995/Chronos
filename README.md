@@ -24,7 +24,7 @@ A web application for managing and keeping track of employee attendance and task
 ### Architecture
 - [x] Anemic/DDD OR n-tier package & class structure
 - [] Design Patterns:
-    - [] Dependency Injection
+    - [x] Dependency Injection
     - [x] Data Access Object
     - [] Business Delegate
     - [x] Model-View-Controller

@@ -1,8 +1,7 @@
 package com.github.sdaniel;
 
 public class Users {
-    private int eid;
-    private int mid;
+    private int id;
     private String firstName;
     private String lastName;
     private String email;
@@ -10,8 +9,7 @@ public class Users {
     private String position;
 
     public Users() {
-        eid = -1;
-        mid = -1;
+        id = -1;
         firstName = null;
         lastName = null;
         email = null;
@@ -19,9 +17,8 @@ public class Users {
         position = null;
     }
     
-    public Users(int eid, int mid, String firstName, String lastName, String email, String password, String position) {
-        this.eid = eid;
-        this.mid = mid;
+    public Users(int id, String firstName, String lastName, String email, String password, String position) {
+        this.id = id;
         this.firstName = firstName;
         this.lastName = lastName;
         this.email = email;
@@ -29,20 +26,12 @@ public class Users {
         this.position = position;
     }
 
-    public int getEid() {
-        return eid;
+    public int getId() {
+        return id;
     }
 
-    public void setEid(int eid) {
-        this.eid = eid;
-    }
-
-    public int getMid() {
-        return mid;
-    }
-
-    public void setMid(int mid) {
-        this.mid = mid;
+    public void setId(int id) {
+        this.id = id;
     }
 
     public String getFirstName() {

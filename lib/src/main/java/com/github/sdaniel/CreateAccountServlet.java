@@ -20,7 +20,15 @@ public class CreateAccountServlet extends HttpServlet {
         String position = req.getParameter("position");
 
         if ((firstName != null) && (lastName != null) && (email != null) && (password != null) && (position != null)) {
-            //store data
+            DataBase dBase = new DataBase();
+            try {
+                UsersDao uDao = new UsersDao(dBase.connect());
+                uDao.insert(new Users(0, firstName, lastName, email, password, position));
+                dBase.connect().close();
+                resp.sendRedirect("/chronos.com/html/");
+            } catch (SQLException e) {
+                e.printStackTrace();
+            }
         }
     }
 }
