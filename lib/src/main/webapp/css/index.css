@@ -18,7 +18,6 @@ div {
     height: 65%;
     width: 30%;
     transform: rotateX(2deg);
-    /*filter: drop-shadow(20px 15px 4px #4444dd);*/
 }
 
 h1 {

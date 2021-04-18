@@ -1,6 +1,7 @@
 package com.github.sdaniel;
 
 import java.io.IOException;
+import java.sql.SQLException;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -14,12 +15,4 @@ public class LoginServlet extends HttpServlet {
         return true;
     }
 
-    @Override
-    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        String userName;
-
-        if((userName = req.getParameter("username")) != null) {
-            resp.getWriter().println("Hello " + userName);
-        }
-    }
 }

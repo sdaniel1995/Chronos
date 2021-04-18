@@ -3,12 +3,12 @@ A web application for managing and keeping track of employee attendance and task
 
 ### Tools & APIs
 - [] Agile User Stories
-- [] Java SE 8
-- [] Gradle
-- [] JDBC
-- [] PostgreSQL
-- [] JavaEE Servlet
-- [] HTML/JS/CSS
+- [x] Java SE 8
+- [x] Gradle
+- [x] JDBC
+- [x] PostgreSQL
+- [x] JavaEE Servlet
+- [x] HTML/JS/CSS
 - [] AJAX/Fetch
 - [] JUnit
 - [] log4j
@@ -22,17 +22,15 @@ A web application for managing and keeping track of employee attendance and task
     - [] Mockito
 
 ### Architecture
-- [] Anemic/DDD OR n-tier package & class structure
+- [x] Anemic/DDD OR n-tier package & class structure
 - [] Design Patterns:
     - [] Dependency Injection
-    - [] Data Access Object
+    - [x] Data Access Object
     - [] Business Delegate
-    - [] Model-View-Controller
+    - [x] Model-View-Controller
     - [] Front Controller
 - [] SQL Normalization (3rd form)
 - [] PL/pgSQL
-- [] Optional:
-    - [] Single Page Application
 
 ### Functionality
 - [] CRUD - Create, Read, Update, Delete

@@ -2,7 +2,7 @@ CREATE TABLE Employees (
     eid SERIAL,
     first_name TEXT NOT NULL,
     last_name TEXT NOT NULL,
-    email TEXT UNIQUE NOT NULL,
+    email TEXT,
     PRIMARY KEY (eid)
 );
 
@@ -10,15 +10,18 @@ CREATE TABLE Managers (
     mid SERIAL,
     first_name TEXT NOT NULL,
     last_name TEXT NOT NULL,
-    email TEXT UNIQUE NOT NULL,
+    email TEXT,
     PRIMARY KEY (mid)
 );
 
-CREATE TABLE Accounts (
+CREATE TABLE Users (
     eid INTEGER,
     mid INTEGER,
+    first_name TEXT NOT NULL,
+    last_name TEXT NOT NULL,
     email TEXT UNIQUE NOT NULL,
-    PRIMARY KEY (email),
+    pass TEXT UNIQUE NOT NULL,
+    position TEXT NOT NULL,
     FOREIGN KEY (eid) REFERENCES Employees (eid),
     FOREIGN KEY (mid) REFERENCES Managers (mid)
 );
