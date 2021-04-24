@@ -11,11 +11,11 @@
     <body>
         <div>
             <h1>Login</h1>
-            <form method="GET" action="/chronos.com/login">
+            <form method="POST" action="/chronos.com/login" id="form">
                 <p>Username</p>
-                <input type="text" name="username" id="username" placeholder="Type your username or email">
+                <input type="text" name="username" class="input" id="username" placeholder="Type your username or email">
                 <p>Password</p>
-                <input type="password" name="password" id="password" placeholder="Type your password">
+                <input type="password" name="password" class="input" id="password" placeholder="Type your password">
                 <a href="#" id="forgot-password">Forgot password?</a>
                 <input type="submit" name="login" id="login" value="Login">
                 <a href="../html/createAccount.html" id="create-account">Create Account</a>

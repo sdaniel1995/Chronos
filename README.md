@@ -29,7 +29,7 @@ A web application for managing and keeping track of employee attendance and task
     - [] Business Delegate
     - [x] Model-View-Controller
     - [] Front Controller
-- [] SQL Normalization (3rd form)
+- [x] SQL Normalization (3rd form)
 - [] PL/pgSQL
 
 ### Functionality

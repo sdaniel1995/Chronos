@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../css/editProfile.css" type="text/css">
+        <title>Chronos | Edit Profile</title>
+    </head>
+    <body>
+        <div>
+            <h1>Edit Profile</h1>
+            <form action="/chronos.com/editProfile" method="POST">
+                <img src="#" id="profile-image" alt="Profile Image"><br>
+                <input type="file" name="image-upload" id="image-upload" accept="image/*">
+                <p>First Name</p>
+                <input type="text" name="first-name" id="fname">
+                <p>Last Name</p>
+                <input type="text" name="last-name" id="lname">
+                <p>Username</p>
+                <input type="text" name="username" id="uname">
+                <p>Email</p>
+                <input type="text" name="email" id="email">
+                <p>Password</p>
+                <input type="password" name="password" id="pass"><br>
+                <input type="submit" id="save-info" value="Save">
+            </form>
+        </div>
+        <script src="../scripts/editProfile.js" type="text/javascript"></script>
+    </body>
+</html>

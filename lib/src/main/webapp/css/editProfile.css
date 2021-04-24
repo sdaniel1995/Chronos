@@ -1,0 +1,51 @@
+* {font-family: Arial, Helvetica, sans-serif;}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: linear-gradient(to right, #f72585, #b5179e, #7209b7, #560bad, #480ca8, #3a0ca3, #3f37c9, #4361ee, #4895ef, #4cc9f0);
+    background-repeat: no-repeat;
+    height: 1000px;
+    width: 100vw;
+}
+
+div {
+    background-color: white;
+    border-radius: 2em;
+    height: 80%;
+    width: 40%;
+}
+
+form {
+    margin: auto;
+    height: 90%;
+    width: 100%;
+}
+
+p {font-weight: bold;}
+
+input{
+    width: 40%;
+    height: 5%;
+    font-size: 13px;
+}
+
+#profile-image {
+    margin-top: 10px;
+    width: 20%;
+    height: 20%;
+}
+
+#save-info {
+    background: linear-gradient(to right, #f72585, #b5179e, #7209b7, #560bad, #480ca8, #3a0ca3, #3f37c9, #4361ee, #4895ef, #4cc9f0);
+    border-radius: 50px;
+    border: none;
+    height: 40px;
+    margin-top: 20px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+    font-size: 18px;
+}

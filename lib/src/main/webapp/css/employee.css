@@ -1,0 +1,115 @@
+* {font-family: Arial, Helvetica, sans-serif;}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: linear-gradient(to right, #f72585, #b5179e, #7209b7, #560bad, #480ca8, #3a0ca3, #3f37c9, #4361ee, #4895ef, #4cc9f0);
+    background-repeat: no-repeat;
+    height: 1000px;
+    width: 100vw;
+}
+
+div {
+    background-color: white;
+    border-radius: 2em;
+    height: 30%;
+    width: 50%;
+}
+
+ #create-timesheet {
+     background: linear-gradient(to right, #f72585, #b5179e, #7209b7, #560bad, #480ca8, #3a0ca3, #3f37c9, #4361ee, #4895ef, #4cc9f0);
+     border-radius: 50px;
+     border-style: none;
+     margin-bottom: 10px;
+     height: 10%;
+     width: 20%;
+     font-weight: bold;
+     font-size: 16px;
+     color: white;
+     cursor: pointer;
+}
+
+#timesheet-wrapper {
+    margin-right: 40px;
+    height: 40%;
+}
+
+#timesheet-view {
+    overflow: scroll;
+    height: 55%;
+    width: 100%;
+}
+
+#time-submission {
+    display: none;
+    width: 80%;
+    padding: 50px 0;
+    text-align: center;
+    background-color: white;
+    margin-top: 20px;
+}
+
+.input-pto, .input-regular {
+    width: 50%;
+    height: 10%;
+    border: 2px solid lightgray;
+    text-align: center;
+}
+
+#profile-view {width: 30%;}
+
+#profile-info {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#more {
+    background: linear-gradient(to right, #f72585, #b5179e, #7209b7, #560bad, #480ca8, #3a0ca3, #3f37c9, #4361ee, #4895ef, #4cc9f0);
+    border-radius: 50px;
+    border-style: none;
+    margin: 0 0 10px 55px;
+    margin-bottom: 10px;
+    width: 90%;
+    font-weight: bold;
+    font-size: 18px;
+    color: white;
+    cursor: pointer;
+}
+
+#profile-image {
+    margin-top: 10px;
+    width: 45%;
+    height: 55%;
+}
+
+#sat, #sun, #mon, #tues, #wed, #thurs, #fri, #total, #task {text-align: center;}
+
+#submit {
+    background: linear-gradient(to right, #f72585, #b5179e, #7209b7, #560bad, #480ca8, #3a0ca3, #3f37c9, #4361ee, #4895ef, #4cc9f0);
+    border-radius: 50px;
+    height: 50px;
+    margin-top: 20px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+}
+
+#total-regular, #total-pto {
+    width: 50%;
+    height: 10%;
+    border: 2px solid lightgray;
+    text-align: center;
+}
+
+#total-hrs {
+    float: right;
+    border: 2px solid lightgray;
+    text-align: center;
+    width: 5%;
+    height: 10%;
+    margin-right: 37px;
+}
+
+#caret {margin-left: 10px;}
