@@ -34,7 +34,6 @@ public class UserDao {
                         rs.getString("pass"), rs.getString("position"));
                 users.add(temp);
             }
-            con.close();
         } catch (SQLException e) {
             e.printStackTrace();
         }
@@ -43,7 +42,7 @@ public class UserDao {
 
     public void insert(User user) {
         try {
-            String sql = "INSERT INTO Users (first_name, last_name, user_name, email, pass, position) values (?, ?, ?, ?, ?, ?);";
+            String sql = "INSERT INTO Users (first_name, last_name, user_name, email, pass, position, picture) values (?, ?, ?, ?, ?, ?, ?);";
             PreparedStatement ps = con.prepareStatement(sql);
             ps.setString(1, user.getFirstName());
             ps.setString(2, user.getLastName());
@@ -51,8 +50,8 @@ public class UserDao {
             ps.setString(4, user.getEmail());
             ps.setString(5, user.getPassword());
             ps.setString(6, user.getPosition());
+            ps.setString(7, user.getPicture());
             ps.executeUpdate();
-            con.close();
         } catch (SQLException e) {
             e.printStackTrace();
         }
@@ -67,6 +66,7 @@ public class UserDao {
             ps.setString(1, username);
             ps.setString(2, password);
             ResultSet rs = ps.executeQuery();
+
             while (rs.next()) {
                 temp.setId(rs.getInt("id"));
                 temp.setFirstName(rs.getString("first_name"));
@@ -78,7 +78,6 @@ public class UserDao {
                 temp.setPicture(rs.getString("picture"));
                 return temp;
             }
-            con.close();
         } catch (SQLException e) {
             e.printStackTrace();
         }
@@ -86,7 +85,7 @@ public class UserDao {
     }
 
     public void updateProfile(User user) {
-        String sql = "UPDATE users SET first_name = ?, last_name = ?, user_name = ?, email = ?, pass = ?, position = ?, picture = ?";
+        String sql = "UPDATE users SET first_name = ?, last_name = ?, user_name = ?, email = ?, pass = ?, position = ?, picture = ? WHERE id = ?";
 
         try {
             PreparedStatement ps = con.prepareStatement(sql);
@@ -97,8 +96,8 @@ public class UserDao {
             ps.setString(5, user.getPassword());
             ps.setString(6, user.getPosition());
             ps.setString(7, user.getPicture());
+            ps.setInt(8, user.getId());
             ps.executeUpdate();
-            con.close();
         } catch (SQLException e) {
             e.printStackTrace();
         }

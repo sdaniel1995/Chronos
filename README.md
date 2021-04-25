@@ -9,14 +9,14 @@ A web application for managing and keeping track of employee attendance and task
 - [x] PostgreSQL
 - [x] JavaEE Servlet
 - [x] HTML/JS/CSS
-- [] AJAX/Fetch
+- [x] AJAX/Fetch
 - [] JUnit
 - [] log4j
 - [] Jest
 - [] Optional:
     - [] Docker, Docker-Compose
     - [] React
-    - [] Bootstrap
+    - [x] Bootstrap
     - [] Remote hosting (AWS EC2/RDS)
     - [] Jenkins CI automation
     - [] Mockito
@@ -33,12 +33,12 @@ A web application for managing and keeping track of employee attendance and task
 - [] PL/pgSQL
 
 ### Functionality
-- [] CRUD - Create, Read, Update, Delete
-- [] Web App dashboard interface
-- [] Asynchronous interface updates
-- [] Login - Authentication & Authorization
-- [] Database persistance
-- [] Session management
+- [x] CRUD - Create, Read, Update, Delete
+- [x] Web App dashboard interface
+- [x] Asynchronous interface updates
+- [x] Login - Authentication & Authorization
+- [x] Database persistance
+- [x] Session management
 
 ### Presentation
 - [] Prepare a demonstration of functionality requirements through a browser
@@ -46,9 +46,9 @@ A web application for managing and keeping track of employee attendance and task
 
 ### User stories
 - An Employee...
-    - [] can login
-    - [] can view the Employee Homepage
-    - [] can logout
+    - [x] can login
+    - [x] can view the Employee Homepage
+    - [x] can logout
     - [] can submit a reimbursement request
     - [] can upload an image of his/her receipt as part of the reimbursement request
     - [] can view their pending reimbursement requests
@@ -58,9 +58,9 @@ A web application for managing and keeping track of employee attendance and task
     - [] receives an email when one of their reimbursement requests is resolved (optional)
 
 - A Manager...
-    - [] can login
-    - [] can view the Manager Homepage
-    - [] can logout
+    - [x] can login
+    - [x] can view the Manager Homepage
+    - [x] can logout
     - [] can approve/deny pending reimbursement requests
     - [] can view all pending requests from all employees
     - [] can view images of the receipts from reimbursement requests

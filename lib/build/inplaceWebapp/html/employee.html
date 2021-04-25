@@ -14,11 +14,10 @@
             <h1>TimeSheets</h1>
             <table class="table">
                     <thead>
-                      <tr>
-                        <th scope="col">#</th>
-                        <th scope="col">Submit Date</th>
-                        <th scope="col">Total Hours</th>
-                        <th scope="col">Status</th>
+                      <tr style="text-align: center;">
+                        <th scope="col" id="time-sheet-submit-header">Submit Date</th>
+                        <th scope="col" id="time-sheet-hours-header">Total Hours</th>
+                        <th scope="col" id="time-sheet-status-header">Status</th>
                       </tr>
                     </thead>
             </table>
@@ -73,7 +72,7 @@
             </form>
         </div>
         <div id="profile-view">
-            <img src="#" id="profile-image" alt="Profile Image">
+            <img src="#" id="profile-image">
             <div id="profile-info">
                 <h3 id="name"></h3>
                 <h4 id="username"></h4>
@@ -81,7 +80,7 @@
                   <button class="btn btn-secondary dropdown-toggle" type="button" id="more" data-toggle="dropdown">More<span class="caret" id="caret"></span></button>
                     <ul class="dropdown-menu">
                       <li><a href="../html/editProfile.html">Edit Profile</a></li>
-                      <li><a href="#">Logout</a></li>
+                      <li><a href="/chronos.com/logout">Logout</a></li>
                     </ul>
                 </div>
             </div>

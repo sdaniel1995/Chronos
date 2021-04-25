@@ -30,10 +30,8 @@ public class LoginServlet extends HttpServlet {
         try {
             UserDao uDao = new UserDao(dBase.connect());
             User user = uDao.validateLogin(username, password);
-
-            System.out.println(user.getUserName());
-            if (user.getEmail().equals(username) && user.getPassword().equals(password)
-                    && user.getPosition().equals("Employee")) {
+            
+            if (user.getEmail().equals(username) && user.getPassword().equals(password) && user.getPosition().equals("Employee")) {
                 logger.info("Login was successful!");
                 session.setAttribute("uname", username);
                 session.setAttribute("upass", password);
@@ -41,6 +39,8 @@ public class LoginServlet extends HttpServlet {
             } else if (user.getEmail().equals(username) && user.getPassword().equals(password)
                     && user.getPosition().equals("Manager")) {
                 logger.info("Login was successful!");
+                session.setAttribute("uname", username);
+                session.setAttribute("upass", password);
                 resp.sendRedirect("/chronos.com/html/manager.html");
             } else {
                 logger.info("Login failed, Invalid username or password!");

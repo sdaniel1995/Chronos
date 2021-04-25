@@ -1,12 +1,55 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../css/manager.css" type="text/css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <link rel="icon" type="image/png" href="../images/clock.png">
         <title>Chronos | Homepage</title>
     </head>
     <body>
-        Manager
+        <div id="timesheet-wrapper">
+            <h1>TimeSheets</h1>
+            <table class="table">
+                    <thead>
+                      <tr style="text-align: center;">
+                        <th scope="col" id="time-sheet-eid-header">Empolyee ID</th>
+                        <th scope="col" id="time-sheet-date-header">Submit Date</th>
+                        <th scope="col" id="time-sheet-hours-header">Total Hours</th>
+                        <th scope="col" id="time-sheet-status-header">Status</th>
+                      </tr>
+                    </thead>
+            </table>
+            <div id="timesheet-view">
+                <table class="table" id="time-sheet"></table>
+            </div>
+            <form method="GET" action="/chronos.com/action" style="margin-top: 10px;">
+              Employee_ID: <input type="text" name="eid" style="text-align: center;">
+              <input type="checkbox" name="accept" id="accept">
+              <label for="accept">Accept</label>
+              <input type="checkbox" name="decline" id="decline">
+              <label for="decline">Decline</label><br>
+              <input type="submit" id="timesheet-action" value="Submit" data-toggle="tooltip" title="Create New TimeSheet" style="margin-top: 10px;">
+            </form>
+        </div>
+        <div id="profile-view">
+            <img src="#" id="profile-image">
+            <div id="profile-info">
+                <h3 id="name"></h3>
+                <h4 id="username"></h4>
+                <div class="dropdown">
+                  <button class="btn btn-secondary dropdown-toggle" type="button" id="more" data-toggle="dropdown">More<span class="caret" id="caret"></span></button>
+                    <ul class="dropdown-menu">
+                      <li><a href="../html/editProfile.html">Edit Profile</a></li>
+                      <li><a href="/chronos.com/logout">Logout</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <script src="../scripts/manager.js" type="text/javascript"></script>
     </body>
 </html>
