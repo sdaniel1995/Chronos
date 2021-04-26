@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.github.sdaniel.UserDaoTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2021-04-26T05:23:49" hostname="Shanes-MBP" time="0.034">
+  <properties/>
+  <testcase name="getAllTest()" classname="com.github.sdaniel.UserDaoTest" time="0.014"/>
+  <testcase name="validateLoginTest()" classname="com.github.sdaniel.UserDaoTest" time="0.019"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

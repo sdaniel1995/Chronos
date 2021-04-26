@@ -8,15 +8,12 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import javax.servlet.http.HttpSession;
 
 @WebServlet("/action")
 public class TimeSheetActionServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         DataBase dBase = new DataBase();
-        HttpSession session = req.getSession(false);
-
         String accept = req.getParameter("accept");
         String decline = req.getParameter("decline");
         int eid = Integer.parseInt(req.getParameter("eid"));

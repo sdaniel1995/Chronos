@@ -1,8 +1,8 @@
 # Project 1 - Chronos
-A web application for managing and keeping track of employee attendance and tasks.
+A full stack web application for managing and keeping track of an employee's timesheets.
 
 ### Tools & APIs
-- [] Agile User Stories
+- [x] Agile User Stories
 - [x] Java SE 8
 - [x] Gradle
 - [x] JDBC
@@ -10,27 +10,18 @@ A web application for managing and keeping track of employee attendance and task
 - [x] JavaEE Servlet
 - [x] HTML/JS/CSS
 - [x] AJAX/Fetch
-- [] JUnit
-- [] log4j
-- [] Jest
-- [] Optional:
-    - [] Docker, Docker-Compose
-    - [] React
+- [x] JUnit
+- [x] log4j
+- [x] Optional:
     - [x] Bootstrap
-    - [] Remote hosting (AWS EC2/RDS)
-    - [] Jenkins CI automation
-    - [] Mockito
 
 ### Architecture
 - [x] Anemic/DDD OR n-tier package & class structure
-- [] Design Patterns:
+- [x] Design Patterns:
     - [x] Dependency Injection
     - [x] Data Access Object
-    - [] Business Delegate
     - [x] Model-View-Controller
-    - [] Front Controller
 - [x] SQL Normalization (3rd form)
-- [] PL/pgSQL
 
 ### Functionality
 - [x] CRUD - Create, Read, Update, Delete
@@ -41,29 +32,27 @@ A web application for managing and keeping track of employee attendance and task
 - [x] Session management
 
 ### Presentation
-- [] Prepare a demonstration of functionality requirements through a browser
-- [] Prepare visual aides (slides) introducing the project requirements and features
+- [x] Prepare a demonstration of functionality requirements through a browser
+- [x] Prepare visual aides (slides) introducing the project requirements and features
 
 ### User stories
 - An Employee...
     - [x] can login
     - [x] can view the Employee Homepage
     - [x] can logout
-    - [] can submit a reimbursement request
-    - [] can upload an image of his/her receipt as part of the reimbursement request
-    - [] can view their pending reimbursement requests
-    - [] can view their resolved reimbursement requests
-    - [] can view their information
-    - [] can update their information
-    - [] receives an email when one of their reimbursement requests is resolved (optional)
+    - [x] can submit a new timesheet
+    - [x] can upload an image to their profile
+    - [x] can view their status of their submitted timesheets
+    - [x] can view their information
+    - [x] can update their information
 
 - A Manager...
     - [x] can login
     - [x] can view the Manager Homepage
     - [x] can logout
-    - [] can approve/deny pending reimbursement requests
-    - [] can view all pending requests from all employees
-    - [] can view images of the receipts from reimbursement requests
-    - [] can view all resolved requests from all employees and see which manager resolved it
-    - [] can view all Employees
-    - [] can view reimbursement requests from a single Employee 
+    - [x] can approve/deny pending timesheet submissions
+    - [x] can view all timesheets from all employees
+    - [x] can view their information
+    - [x] can update their information
+    - [x] can upload an image to their profile
+

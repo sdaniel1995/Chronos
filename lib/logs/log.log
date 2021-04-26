@@ -1,1 +1,9 @@
-[INFO ] 2021-04-20 22:07:36.679 [qtp755328698-20] LoginServlet - Login failed, Invalid username or password!
+[INFO ] 2021-04-26 01:24:11.446 [qtp755328698-21] LoginServlet - Login was successful!
+[INFO ] 2021-04-26 01:24:34.261 [qtp755328698-14] LoginServlet - Shane Daniel's profile was updated!
+[INFO ] 2021-04-26 01:25:04.448 [qtp755328698-19] LoginServlet - Login was successful!
+[INFO ] 2021-04-26 01:25:19.104 [qtp755328698-14] LoginServlet - Logout was successful!
+[INFO ] 2021-04-26 01:27:32.369 [qtp755328698-16] LoginServlet - Login was successful!
+[INFO ] 2021-04-26 01:27:43.087 [qtp755328698-16] LoginServlet - Logout was successful!
+[INFO ] 2021-04-26 01:28:19.788 [qtp755328698-15] LoginServlet - Login was successful!
+[INFO ] 2021-04-26 01:28:40.470 [qtp755328698-15] LoginServlet - CraigDaniel's profile was updated!
+[INFO ] 2021-04-26 01:28:48.601 [qtp755328698-15] LoginServlet - Logout was successful!

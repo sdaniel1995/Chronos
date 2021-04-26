@@ -1,2 +1,6 @@
+com/github/sdaniel/TimeSheetDaoTest.java
+ com.github.sdaniel.TimeSheetDaoTest
+com/github/sdaniel/UserDaoTest.java
+ com.github.sdaniel.UserDaoTest
 com/github/sdaniel/LibraryTest.java
  com.github.sdaniel.LibraryTest

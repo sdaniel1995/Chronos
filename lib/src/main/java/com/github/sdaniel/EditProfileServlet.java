@@ -47,7 +47,7 @@ public class EditProfileServlet extends HttpServlet {
         DataBase dBase = new DataBase();
         User user = new User();
         HttpSession session = req.getSession(false);
-        //final Logger logger = LogManager.getLogger(LoginServlet.class);
+        final Logger logger = LogManager.getLogger(LoginServlet.class);
 
         String imagePath = "../images/" + req.getPart("image-upload").getSubmittedFileName();
         String firstName = req.getParameter("first-name");
@@ -80,6 +80,7 @@ public class EditProfileServlet extends HttpServlet {
                     user.setPassword(password);
                 }
                 uDao.updateProfile(user);
+                logger.info("{} {}'s profile was updated!", firstName, lastName);
                 resp.sendRedirect("/chronos.com/html/employee.html");
             } else {
                 resp.sendRedirect("/chronos.com/html/");
