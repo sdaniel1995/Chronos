@@ -58,14 +58,9 @@ Chronos is an Online transaction processing (OLTP) application to manage the pro
 
 ### Instructions for Use
 
-    - Login using your registered email and registered.
-Initial user and workout data is loaded internally from csv file
-Depending on user or admin credentials you will be routed to the appropriate landing page
-For admin you will have access to:
-Can view all user’s workouts
-Can view all users and passwords
-Can add a user -Can delete a workout
-For User you ill have access to:
-View his/her individual workouts
-Delete a workout
-Add a workout -Search for another athlete to run with
+   - Login using your registered email and registered.
+   - If you do not have an account create on be clicking the create account link.
+   - If you are an Employee sign into your account and create a new timesheet submission or update any profile information.
+   - A user can update information on their profile by clicking the more button underneath their profile image and choosing 'Edit Profile'.
+   - If you are an Admin/Manager sign into your account and choose which time sheet submission you would like to decline or approve (if there are any) by entering        the relative Employee id that is displayed.
+   - Finally logout by clicking the more button underneath your profile picture and choosing log out.
