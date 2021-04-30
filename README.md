@@ -1,5 +1,5 @@
 # Project 1 - Chronos
-A full stack web application for managing and keeping track of an employee's timesheets.
+Chronos is an OLTP application to manage the processing of requests and responses from a client HTML/JS application to a Java backend server, then a Postgresql database. It is full stack web application for managing and keeping track of an employee's timesheets.
 
 ### Tools & APIs
 - [x] Agile User Stories
