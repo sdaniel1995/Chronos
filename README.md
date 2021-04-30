@@ -56,3 +56,16 @@ Chronos is an Online transaction processing (OLTP) application to manage the pro
     - [x] can update their information
     - [x] can upload an image to their profile
 
+### Instructions for Use
+
+    - Login using your registered email and registered.
+Initial user and workout data is loaded internally from csv file
+Depending on user or admin credentials you will be routed to the appropriate landing page
+For admin you will have access to:
+Can view all user’s workouts
+Can view all users and passwords
+Can add a user -Can delete a workout
+For User you ill have access to:
+View his/her individual workouts
+Delete a workout
+Add a workout -Search for another athlete to run with
