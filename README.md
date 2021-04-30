@@ -58,7 +58,7 @@ Chronos is an Online transaction processing (OLTP) application to manage the pro
 
 ### Instructions for Use
 
-   - Login using your registered email and registered.
+   - Login using your registered email and password.
    - If you do not have an account create on be clicking the create account link.
    - If you are an Employee sign into your account and create a new timesheet submission or update any profile information.
    - A user can update information on their profile by clicking the more button underneath their profile image and choosing 'Edit Profile'.
